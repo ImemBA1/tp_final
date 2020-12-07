@@ -6,6 +6,7 @@ import { ErrornotfoundComponent } from './application/errornotfound/errornotfoun
 import { FormulaireComponent } from './application/formulaire/formulaire.component';
 import { FunComponent } from './application/fun/fun.component';
 import { HomeComponent } from './application/home/home.component';
+import { ReactiveComponent } from './application/reactive/reactive.component';
 import { TutorielComponent } from './application/tutoriel/tutoriel.component';
 
 
@@ -13,7 +14,7 @@ import { TutorielComponent } from './application/tutoriel/tutoriel.component';
 const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'crud', component: CrudComponent },
-  { path: 'formulaire', component: FormulaireComponent },
+  { path: 'formulaire', component: ReactiveComponent },
   { path: 'fun', component: FunComponent },
   { path: 'home', component: HomeComponent },
   {

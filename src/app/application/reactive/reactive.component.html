@@ -1,0 +1,90 @@
+<div class="container" style="margin-top: 65px">
+    <h2>User Settings</h2>
+
+      <form [formGroup]="vehiculeForm" (ngSubmit)="onSubmit()">
+
+        <div *ngIf="validMessage != ''">
+          <h3 class="has-info">{{validMessage}}</h3>
+        </div>
+
+        <div class="form-group">
+          <label for="immatriculation">Immatriculation</label>
+          <input id="immatriculation" formControlName="immatriculation" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="numeroTaxi">Numéro Taxi</label>
+          <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" />
+        </div>   
+
+        <p>Nombre de personnes</p>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="nbPersonne" 
+                   id="nbPersonne" value="1" checked/>
+            <label class="form-check-label" for="1perso">
+              1 personne
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="nbPersonne" 
+                   id="nbPersonne" value="2">
+            <label class="form-check-label" for="2perso">
+              2 personnes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" formControlName="nbPersonne" 
+                    id="nbPersonne" value="3"> 
+            <label class="form-check-label" for="3perso">
+              3 personnes
+            </label>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="classe">Classe </label>
+          <select class="form-control" id="classe" formControlName="classe">
+            <option>Première classe</option>
+            <option>Deuxième classe</option>
+            <option>Economique</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="prix">Prix</label>
+          <input id="prix" formControlName="prix" class="form-control" />
+        </div>  
+
+        <div class="form-group">
+          <label for="qualiteService">Qualité du service </label>
+          <select class="form-control" id="qualiteService" formControlName="qualiteService">
+            <option>Excellent</option>
+            <option>Bon</option>
+            <option>Assez bon</option>
+            <option>Moyen</option>
+            <option>Nul</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <textarea id="destination" formControlName="destination" class="form-control" 
+                    rows="3"></textarea>
+        </div>     
+        
+        <button class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  
+  
+  
+    <!-- <h3>dirty: {{propertyTest.dirty }}</h3>
+    <h3>pristine: {{propertyTest.pristine }}</h3>
+    <h3>touched: {{propertyTest.touched }}</h3>
+    <h3>untouched: {{propertyTest.untouched }}</h3>
+    <h3>valid: {{propertyTest.valid }}</h3>
+    <h3>invalid: {{propertyTest.invalid }}</h3> -->
+  
+    <!--h3>{{user | json}}</h3-->
+  

@@ -14,6 +14,7 @@ import { FunComponent } from './application/fun/fun.component';
 import { HomeComponent } from './application/home/home.component';
 import { NavbarComponent } from './application/navbar/navbar.component';
 import { TutorielComponent } from './application/tutoriel/tutoriel.component';
+import { ReactiveComponent } from './application/reactive/reactive.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TutorielComponent } from './application/tutoriel/tutoriel.component';
     FunComponent,
     HomeComponent,
     NavbarComponent,
-    TutorielComponent
+    TutorielComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,

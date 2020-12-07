@@ -1,7 +1,10 @@
 export class Vehicule {
-    immatriculation:string;
-    numeroTaxi:number;
-    chauffeur:string;
-    distanceParcourue:string;
-    etatVehicule:string;
+
+    immatriculation: string;
+    numeroTaxi: number;
+    prix: number;
+    classe: string;
+    nbPersonne: number;
+    destination: string;
+    qualiteService: string;
 }   

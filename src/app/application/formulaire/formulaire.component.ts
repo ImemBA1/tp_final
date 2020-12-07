@@ -10,12 +10,12 @@ import { User } from './user';
 export class FormulaireComponent implements OnInit {
 
   user: User = {
-    name: 'Toto',
+    name: '',
     emailOffers: true,
-    interfaceStyle: 'dark',
-    subscriptionType: 'Annual',
-    notes: 'Angular Formulaires',
-    password: 'xyz123_'
+    interfaceStyle: '',
+    subscriptionType: '',
+    notes: '',
+    password: ''
   };
 
   autreUser : User = {...this.user};

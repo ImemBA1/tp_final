@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class VehiculeService extends GenericServices<Vehicule,number>{
-  
-  constructor(http: HttpClient) { 
-    super(http, "");
+export class VehiculeService extends GenericServices<Vehicule, number>{
+
+  constructor(http: HttpClient) {
+    super(http, "http://localhost:7000/monapi");
   }
 }
