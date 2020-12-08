@@ -6,5 +6,4 @@ export class Vehicule {
     classe: string;
     nbPersonne: number;
     destination: string;
-    qualiteService: string;
 }   

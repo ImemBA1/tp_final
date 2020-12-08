@@ -16,7 +16,6 @@ export class ReactiveComponent implements OnInit {
     prix: new FormControl('', Validators.required),
     classe: new FormControl('', Validators.required),
     nbPersonne: new FormControl('', Validators.required),
-    qualiteService: new FormControl('', Validators.required),
     destination: new FormControl(''),
   });
 
@@ -33,7 +32,7 @@ export class ReactiveComponent implements OnInit {
     if (this.vehiculeForm.valid) {
       this.service.post(this.vehiculeForm.value).subscribe(data => {
         this.vehiculeForm.reset();
-        this.router.navigateByUrl('');
+        this.router.navigateByUrl('/crud');
       })
     } else {
       this.validMessage = "Please fill the the form before";

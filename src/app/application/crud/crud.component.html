@@ -4,18 +4,20 @@
     <table class="table table-bordered bg-dark text-warning">
         <tr>
             <th>Immatriculation</th>
-            <th>Chauffeur</th>
             <th>Numero du Taxi</th>
-            <th>Distance parcourue</th>
-            <th>Etat du vehicule</th>
+            <th>Prix</th>
+            <th>Classe</th>
+            <th>Nombre de personne</th>
+            <th>Destination</th>
             <th width="230px">Operations</th>
         </tr>
         <tr *ngFor="let vehi of listeVehicule">
             <td>{{vehi.immatriculation}}</td>
             <td>{{vehi.numeroTaxi}}</td>
-            <td>{{vehi.chauffeur}}</td>
-            <td>{{vehi.distanceParcourue}}</td>
-            <td>{{vehi.etatVehicule}}</td>\
+            <td>{{vehi.prix}}</td>
+            <td>{{vehi.classe}}</td>
+            <td>{{vehi.nbPersonne}}</td>
+            <td>{{vehi.destination}}</td>
             <a href="" class="btn btn-info">Afficher</a>
             <a href="" class="btn btn-primary"></a>
             <a href="" class="btn btn-danger">Delete</a>
