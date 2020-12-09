@@ -7,10 +7,12 @@ import { FunComponent } from './application/fun/fun.component';
 import { HomeComponent } from './application/home/home.component';
 import { ReactiveComponent } from './application/reactive/reactive.component';
 import { TutorielComponent } from './application/tutoriel/tutoriel.component';
+import { UpdateComponent } from './application/update/update.component';
 
 
 
 const routes: Routes = [
+  { path: 'updateForm/:id', component: UpdateComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'crud', component: CrudComponent },
   { path: 'formulaire', component: ReactiveComponent },

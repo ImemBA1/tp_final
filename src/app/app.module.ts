@@ -14,6 +14,7 @@ import { HomeComponent } from './application/home/home.component';
 import { NavbarComponent } from './application/navbar/navbar.component';
 import { TutorielComponent } from './application/tutoriel/tutoriel.component';
 import { ReactiveComponent } from './application/reactive/reactive.component';
+import { UpdateComponent } from './application/update/update.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ReactiveComponent } from './application/reactive/reactive.component';
     HomeComponent,
     NavbarComponent,
     TutorielComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

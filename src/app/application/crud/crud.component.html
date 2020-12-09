@@ -20,7 +20,7 @@
             <td>{{taxi.destination}}</td>
             <td>
                 <a href="" class="btn btn-info">Afficher</a>
-                <a href="" class="btn btn-primary">Modifier</a>
+                <a href="" class="btn btn-primary"  [routerLink]="[ '/updateForm/', taxi.id ]">Modifier</a>
                 <button type="button" (click)="delete(taxi.id, i)" class="btn btn-danger">Supprimer</button>
             </td>
         </tr>
