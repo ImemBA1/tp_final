@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AffichageComponent } from './application/affichage/affichage.component';
 import { ContactComponent } from './application/contact/contact.component';
 import { CrudComponent } from './application/crud/crud.component';
 import { ErrornotfoundComponent } from './application/errornotfound/errornotfound.component';
@@ -13,6 +14,7 @@ import { UpdateComponent } from './application/update/update.component';
 
 const routes: Routes = [
   { path: 'updateForm/:id', component: UpdateComponent },
+  { path: 'affichageForm/:id', component: AffichageComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'crud', component: CrudComponent },
   { path: 'formulaire', component: ReactiveComponent },
