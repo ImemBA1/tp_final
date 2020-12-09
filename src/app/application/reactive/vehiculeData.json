@@ -1,20 +1,3 @@
 {
-  "monApi": [
-    {
-      "numeroTaxi": "52553695",
-      "prix": "600",
-      "classe": "Première classe",
-      "nbPersonne": "2",
-      "destination": "we",
-      "id": 1
-    },
-    {
-      "numeroTaxi": "9652",
-      "prix": "199",
-      "classe": "Economique",
-      "nbPersonne": "3",
-      "destination": "cegep",
-      "id": 2
-    }
-  ]
+  "monApi": []
 }

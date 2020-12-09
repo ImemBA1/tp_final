@@ -1,3 +1,4 @@
+import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -12,8 +13,8 @@ import { ReactiveService } from '../../services/reactive.service'
 export class ReactiveComponent implements OnInit {
   vehiculeForm = new FormGroup({
     // id: new FormControl('', Validators.required),
-    numeroTaxi: new FormControl('', Validators.required),
-    prix: new FormControl('', Validators.required),
+    numeroTaxi: new FormControl('', [Validators.required, Validators.pattern('[0-9]{4}')]),
+    prix: new FormControl('', [Validators.required, Validators.pattern('[0-9]')]),
     classe: new FormControl('', Validators.required),
     nbPersonne: new FormControl('', Validators.required),
     destination: new FormControl('', Validators.required),

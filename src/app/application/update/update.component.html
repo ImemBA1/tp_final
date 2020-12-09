@@ -8,7 +8,7 @@
     
             <div class="form-group">
               <label for="numeroTaxi" class="font-italic">Numéro Taxi</label>
-              <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" [(ngModel)]="taxi.numeroTaxi" />
+              <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" [(ngModel)]="taxi.numeroTaxi" placeholder="Ex: 1234 , 9854" />
             </div>   
     
             <p class="font-italic">Nombre de personnes</p>
@@ -47,13 +47,13 @@
     
             <div class="form-group">
               <label for="prix" class="font-italic">Prix</label>
-              <input id="prix" formControlName="prix" class="form-control"  [(ngModel)]="taxi.prix"/>
+              <input id="prix" formControlName="prix" class="form-control"  [(ngModel)]="taxi.prix" placeholder="Le prix de la course"/>
             </div>  
     
             <div class="form-group">
               <label for="destination" class="font-italic">Destination</label>
               <textarea id="destination" formControlName="destination" class="form-control" 
-                        rows="3"  [(ngModel)]="taxi.destination"></textarea>
+                        rows="3"  [(ngModel)]="taxi.destination" placeholder="Votre destination"></textarea>
             </div>     
             
             <button class="btn btn-primary rounded font-italic">Envoyez</button>

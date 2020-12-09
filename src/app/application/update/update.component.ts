@@ -21,8 +21,8 @@ export class UpdateComponent implements OnInit {
       this.taxi = resultat;
     });
     this.updateVehiculeForm = new FormGroup({
-      numeroTaxi: new FormControl('', Validators.required),
-      prix: new FormControl('', Validators.required),
+      numeroTaxi: new FormControl('', [Validators.required, Validators.pattern('[0-9]{4}')]),
+      prix: new FormControl('', [Validators.required, Validators.pattern('[0-9]')]),
       classe: new FormControl('', Validators.required),
       nbPersonne: new FormControl('', Validators.required),
       destination: new FormControl('', Validators.required),

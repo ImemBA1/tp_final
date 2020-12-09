@@ -1,7 +1,8 @@
 <section>
-<div class="container  text-white" style="margin-top: 65px">
+<div class="container  text-warning" style="margin-top: 65px">
     <hr>
-    <h2 class="font-weight-bold font-italic text-center text-warning" >Réservez dès maintenant !</h2>
+    <h2 class="font-weight-bold font-italic text-center text-warning" >Réservez dès maintenant !</h2> 
+    <p class="font-italic text-center text-warning">En deux clics trois mouvements</p>
 
       <form [formGroup]="vehiculeForm" (ngSubmit)="onSubmit()">
 
@@ -11,7 +12,7 @@
 
         <div class="form-group">
           <label for="numeroTaxi" class="font-italic">Numéro Taxi</label>
-          <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" />
+          <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" placeholder="Ex: 1234 , 9854" />
         </div>   
 
         <p class="font-italic">Nombre de personnes</p>
@@ -50,12 +51,12 @@
 
         <div class="form-group">
           <label for="prix" class="font-italic">Prix</label>
-          <input id="prix" formControlName="prix" class="form-control" />
+          <input id="prix" formControlName="prix" class="form-control" placeholder="Le prix de la course" />
         </div>  
 
         <div class="form-group">
           <label for="destination" class="font-italic">Destination</label>
-          <textarea id="destination" formControlName="destination" class="form-control" 
+          <textarea id="destination" formControlName="destination" placeholder="Votre destination" class="form-control" 
                     rows="3"></textarea>
         </div>     
         
