@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './application/contact/contact.component';
 import { CrudComponent } from './application/crud/crud.component';
 import { ErrornotfoundComponent } from './application/errornotfound/errornotfound.component';
-import { FormulaireComponent } from './application/formulaire/formulaire.component';
 import { FunComponent } from './application/fun/fun.component';
 import { HomeComponent } from './application/home/home.component';
 import { ReactiveComponent } from './application/reactive/reactive.component';

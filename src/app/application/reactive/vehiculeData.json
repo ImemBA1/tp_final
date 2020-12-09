@@ -1,31 +1,3 @@
 {
-  "monApi": [
-    {
-      "immatriculation": "QWR854",
-      "numeroTaxi": "5255369575",
-      "prix": "600",
-      "classe": "Deuxième classe",
-      "nbPersonne": "2",
-      "destination": "qwegqge",
-      "id": 1
-    },
-    {
-      "immatriculation": "QWR854",
-      "numeroTaxi": "52553695",
-      "prix": "600",
-      "classe": "Deuxième classe",
-      "nbPersonne": "3",
-      "destination": "qwegqrgrg",
-      "id": 2
-    },
-    {
-      "immatriculation": "QWR854",
-      "numeroTaxi": "5255369575",
-      "prix": "600",
-      "classe": "Deuxième classe",
-      "nbPersonne": "3",
-      "destination": "",
-      "id": 3
-    }
-  ]
+  "monApi": []
 }

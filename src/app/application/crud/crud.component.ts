@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Vehicule } from 'src/app/models/vehicule';
-import { User } from '../formulaire/user';
+import { ReactiveService } from 'src/app/services/reactive.service';
 import { VehiculeService } from './vehicule.service';
 
 @Component({
@@ -11,22 +11,25 @@ import { VehiculeService } from './vehicule.service';
 export class CrudComponent implements OnInit {
 
   listeVehicule: Vehicule[];
-  // , private service2: ReactiveService
-  constructor(private service: VehiculeService) { }
+  public headElements = ['ID', 'Numero Taxi', 'Prix', 'Classe', 'Personnes', 'Destination', 'Operations'];
+  constructor(private service: VehiculeService, private service2: ReactiveService) { }
 
   ngOnInit(): void {
     this.getAllVehicule();
-    // this.getAllUsers();
   }
-  listUsers: User[];
   getAllVehicule(): void {
-    this.service.getAll().subscribe(data => this.listeVehicule = data)
+    this.service.getAll().subscribe(data => {
+      this.listeVehicule = data;
+      console.log(this.listeVehicule);
+    })
   }
-  // getAllUsers(): void {
-  //   this.service2.getAll().subscribe(data => {
-  //     this.listUsers = data;
-  //     console.log(this.listUsers);
-  //   })
-  // }
 
+  public delete(id: number, i: any) {
+    if (window.confirm("Êtes-vous sûr d'annuler cette réservation")) {
+      this.service.deleteById(id).subscribe(resultat => {
+        this.listeVehicule.splice(i, 1);
+      });
+    }
+
+  }
 }

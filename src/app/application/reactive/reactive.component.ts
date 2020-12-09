@@ -11,7 +11,7 @@ import { ReactiveService } from '../../services/reactive.service'
 })
 export class ReactiveComponent implements OnInit {
   vehiculeForm = new FormGroup({
-    immatriculation: new FormControl('', [Validators.required, Validators.minLength(6), Validators.maxLength(6), Validators.pattern("[A-Z0-9]{6}")]),
+    // id: new FormControl('', Validators.required),
     numeroTaxi: new FormControl('', Validators.required),
     prix: new FormControl('', Validators.required),
     classe: new FormControl('', Validators.required),
@@ -35,7 +35,7 @@ export class ReactiveComponent implements OnInit {
         this.router.navigateByUrl('/crud');
       })
     } else {
-      this.validMessage = "Please fill the the form before";
+      this.validMessage = "Remplissez tous les champs correctement avant d'envoyer !";
     }
   }
 }

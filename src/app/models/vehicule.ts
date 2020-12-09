@@ -1,6 +1,5 @@
 export class Vehicule {
-
-    immatriculation: string;
+    id: number;
     numeroTaxi: number;
     prix: number;
     classe: string;

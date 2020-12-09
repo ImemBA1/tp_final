@@ -1,26 +1,30 @@
 
-<div class="container" id="crudVehicule">
-    <h1>Crud</h1>
-    <table class="table table-bordered bg-dark text-warning">
-        <tr>
-            <th>Immatriculation</th>
-            <th>Numero du Taxi</th>
-            <th>Prix</th>
-            <th>Classe</th>
-            <th>Nombre de personne</th>
-            <th>Destination</th>
-            <th width="230px">Operations</th>
+<section style="margin-top: 65px;">
+<div class="container"  id="crudVehicule">
+    <a [routerLink]="['/formulaire']" class="btn btn-dark rounded font-italic text-warning">
+        <i class="fas fa-phone-volume fa-2x">&nbsp; Appelez un &nbsp;</i><i class="fas fa-car fa-2x"></i> </a>
+
+    <table class="table table-bordered bg-dark text-warning" style="margin-top: 20px;">
+        <thead >
+            <tr>
+                <th *ngFor="let entete of headElements" scop="col">{{entete}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let taxi of listeVehicule let i = index">
+            <td>{{taxi.id}}</td>
+            <td>{{taxi.numeroTaxi}}</td>
+            <td>{{taxi.prix}} $</td>
+            <td>{{taxi.classe}}</td>
+            <td>{{taxi.nbPersonne}}</td>
+            <td>{{taxi.destination}}</td>
+            <td>
+                <a href="" class="btn btn-info">Afficher</a>
+                <a href="" class="btn btn-primary">Modifier</a>
+                <button type="button" (click)="delete(taxi.id, i)" class="btn btn-danger">Supprimer</button>
+            </td>
         </tr>
-        <tr *ngFor="let vehi of listeVehicule">
-            <td>{{vehi.immatriculation}}</td>
-            <td>{{vehi.numeroTaxi}}</td>
-            <td>{{vehi.prix}}</td>
-            <td>{{vehi.classe}}</td>
-            <td>{{vehi.nbPersonne}}</td>
-            <td>{{vehi.destination}}</td>
-            <a href="" class="btn btn-info">Afficher</a>
-            <a href="" class="btn btn-primary"></a>
-            <a href="" class="btn btn-danger">Delete</a>
-        </tr>
+    </tbody>
     </table>
 </div>
+</section>

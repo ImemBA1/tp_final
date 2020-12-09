@@ -1,16 +1,12 @@
-<div class="container" style="margin-top: 65px">
+<section>
+<div class="container  text-white" style="margin-top: 65px">
     <hr>
-    <h2 class="font-weight-bold  font-italic text-center">Réservez dès maintenant !</h2>
+    <h2 class="font-weight-bold font-italic text-center text-warning" >Réservez dès maintenant !</h2>
 
       <form [formGroup]="vehiculeForm" (ngSubmit)="onSubmit()">
 
         <div *ngIf="validMessage != ''">
           <h3 class="has-info">{{validMessage}}</h3>
-        </div>
-
-        <div class="form-group">
-          <label for="immatriculation" class="font-italic">Immatriculation</label>
-          <input id="immatriculation" formControlName="immatriculation" class="form-control" />
         </div>
 
         <div class="form-group">
@@ -63,18 +59,10 @@
                     rows="3"></textarea>
         </div>     
         
-        <button class="btn btn-primary font-italic">Send</button>
+        <button class="btn btn-primary rounded font-italic">Envoyez</button>
       </form>
     </div>
   
-  
-  
-    <!-- <h3>dirty: {{propertyTest.dirty }}</h3>
-    <h3>pristine: {{propertyTest.pristine }}</h3>
-    <h3>touched: {{propertyTest.touched }}</h3>
-    <h3>untouched: {{propertyTest.untouched }}</h3>
-    <h3>valid: {{propertyTest.valid }}</h3>
-    <h3>invalid: {{propertyTest.invalid }}</h3> -->
-  
-    <!--h3>{{user | json}}</h3-->
+    
+</section>
   
