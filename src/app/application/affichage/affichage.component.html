@@ -5,7 +5,6 @@
     
           <form [formGroup]="affichageVehiculeForm" (ngSubmit)="afficherVehicule()">
     
-    
             <div class="form-group">
               <label for="numeroTaxi" class="font-italic">Numéro Taxi</label>
               <input id="numeroTaxi" formControlName="numeroTaxi" class="form-control" [(ngModel)]="taxi.numeroTaxi" readonly />
@@ -22,7 +21,7 @@
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" formControlName="nbPersonne" 
-                       id="nbPersonne" value="2"  [(ngModel)]="taxi.nbPersonne" onclick="this.checked = false;">
+                       id="nbPersonne" value="2"  [(ngModel)]="taxi.nbPersonne"  onclick="this.checked = false;" >
                 <label class="form-check-label" for="2perso">
                   2 personnes
                 </label>
