@@ -1,1 +1,25 @@
-<p>tutoriel works!</p>
+<h2 style="margin-top:2em;">L'id charger est : {{myParam}}</h2>
+
+<span [ngSwitch]="myParam">
+    <ng-container *ngSwitchCase="1">
+        <div>
+            <h1>Mini Tutorial Angular</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequuntur molestias repellendus repellat consectetur ex adipisci nemo eveniet corporis totam inventore voluptates, illum soluta. Itaque deleniti pariatur quaerat sit quisquam?</p>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="2">
+        <div>
+            <h1>Mini Tutorial Crud</h1>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="3">
+        <div>
+            <h1>Mini Tutorial Relations Entre Objets</h1>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="4">
+        <div>
+            <h1>Projet 4</h1>
+        </div>
+    </ng-container>
+</span>
