@@ -2,7 +2,7 @@
 div{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-hr.style-seven {
+hr {
     overflow: visible; 
     height: 30px;
     border-style: solid;
@@ -10,7 +10,7 @@ hr.style-seven {
     border-width: 1px 0 0 0;
     border-radius: 20px;
 }
-hr.style-seven:before { 
+hr{ 
     display: block;
     content: "";
     height: 30px;

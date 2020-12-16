@@ -1,25 +1,101 @@
-<h2 style="margin-top:2em;">L'id charger est : {{myParam}}</h2>
+<section>
 
-<span [ngSwitch]="myParam">
-    <ng-container *ngSwitchCase="1">
-        <div>
-            <h1>Mini Tutorial Angular</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequuntur molestias repellendus repellat consectetur ex adipisci nemo eveniet corporis totam inventore voluptates, illum soluta. Itaque deleniti pariatur quaerat sit quisquam?</p>
-        </div>
-    </ng-container>
-    <ng-container *ngSwitchCase="2">
-        <div>
-            <h1>Mini Tutorial Crud</h1>
-        </div>
-    </ng-container>
-    <ng-container *ngSwitchCase="3">
-        <div>
-            <h1>Mini Tutorial Relations Entre Objets</h1>
-        </div>
-    </ng-container>
-    <ng-container *ngSwitchCase="4">
-        <div>
-            <h1>Projet 4</h1>
-        </div>
-    </ng-container>
-</span>
+
+    <span [ngSwitch]="myParam">
+        <ng-container *ngSwitchCase="1">
+            <h4 class="font-weight-bold font-italic text-center text-warning">Type de paiement</h4>
+            <h6 class="font-italic text-center text-warning">Sondage par secteur</h6>
+            <div class="container part1">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="progress blue">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">90%</div>
+                        </div>
+                        <p class="text-center" style="margin-top: 10px; color:#ff9204">Par carte de débit</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="progress yellow">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">75%</div>
+                        </div>
+                        <p class="text-center" style="margin-top: 10px; color:#e004fd">Par carte de crédit</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="progress green">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">80%</div>
+                        </div>
+                        <p class="text-center" style="margin-top: 10px; color:#1abc9c">En argent comptant</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="progress pink">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">50%</div>
+                        </div>
+                        <p class="text-center" style="margin-top: 10px; color:#ed687c">Carte cadeau</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+            <h4 class="font-weight-bold font-italic text-center text-warning">Employés</h4>
+            <h6 class="font-italic text-center text-warning">Sondage par bar de progression</h6>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="bg-dark text-white rounded">
+                            <h6 class="mb-3 text-primary" style="font-size: 20px;">Homme &nbsp; <i
+                                    class="fas fa-mars fa-lg text-primary"></i>
+                            </h6>
+                            <div class="progress mb-5" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-blod bg-primary"
+                                    style="width:75%">
+                                    75%
+                                </div>
+                            </div>
+                            <h6 class="mb-3" style="font-size: 20px; color:#ed68d0">Femme &nbsp; <i
+                                    class="fas fa-venus fa-lg"></i>
+                            </h6>
+                            <div class="progress mb-5" style="height: 20px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-blod"
+                                    style="width:55%; background-color:#ed68d0">
+                                    55%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngSwitchCase=" 3">
+            <h4 class="font-weight-bold font-italic text-center text-warning">Service de livraison</h4>
+            <div class="text-center text-warning">
+                <p>TaxiFuture offre un service de livraison rapide et
+                    sécuritaire pour vous aider à envoyer vos petits colis à courte distance.</p>
+                <p>Prix minimum : 15$</p>
+                <p>Pour obtenir plus de détails, <a routerLink="/contact">contactez-nous</a> dès aujourd’hui.</p>
+            </div>
+        </ng-container>
+    </span>
+</section>

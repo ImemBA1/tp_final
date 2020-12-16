@@ -17,6 +17,5 @@ export class TutorielComponent implements OnInit {
       this.myParam = params.id;
       console.log(this.myParam);
     });
-
   }
 }

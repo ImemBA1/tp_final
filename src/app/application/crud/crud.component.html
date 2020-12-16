@@ -1,30 +1,32 @@
-
 <section style="margin-top: 65px;">
-<div class="container"  id="crudVehicule">
-    <a [routerLink]="['/formulaire']" class="btn btn-dark rounded font-italic text-warning">
-        <i class="fas fa-phone-volume fa-2x">&nbsp; Appelez un &nbsp;</i><i class="fas fa-car fa-2x"></i> </a>
+    <div class="container" id="crudVehicule">
+        <a [routerLink]="['/formulaire']" class="btn btn-dark rounded font-italic text-warning">
+            <i class="fas fa-phone-volume fa-2x">&nbsp; Appelez un &nbsp;</i><i class="fas fa-car fa-2x"></i> </a>
 
-    <table class="table table-bordered text-center bg-dark text-warning" style="margin-top: 20px;">
-        <thead >
-            <tr>
-                <th *ngFor="let entete of headElements" scop="col">{{entete}}</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let taxi of listeVehicule let i = index">
-            <td>{{taxi.id}}</td>
-            <td>{{taxi.numeroTaxi}}</td>
-            <td>{{taxi.prix}} $</td>
-            <td>{{taxi.classe}}</td>
-            <td>{{taxi.nbPersonne}}</td>
-            <td>{{taxi.destination}}</td>
-            <td>
-                <button class="btn btn-dark border-warning text-warning" style="margin-right: 5px;" [routerLink]="[ '/affichageForm/', taxi.id ]">Afficher</button>
-                <button class="btn btn-dark text-warning border-warning" style="margin-right: 5px;" [routerLink]="[ '/updateForm/', taxi.id ]">Modifier</button>
-                <button class="btn btn-dark text-warning border-warning" (click)="delete(taxi.id, i)" >Supprimer</button>
-            </td>
-        </tr>
-    </tbody>
-    </table>
-</div>
+        <table class="table table-bordered text-center bg-dark text-warning" style="margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th *ngFor="let entete of headElements" scop="col">{{entete}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let taxi of listeVehicule let i = index">
+                    <td>{{taxi.id}}</td>
+                    <td>{{taxi.numeroTaxi}}</td>
+                    <td>{{taxi.prix}} $</td>
+                    <td>{{taxi.classe}}</td>
+                    <td>{{taxi.nbPersonne}}</td>
+                    <td>{{taxi.destination}}</td>
+                    <td>
+                        <button class="btn btn-dark border-warning text-warning" style="margin-right: 5px;"
+                            [routerLink]="[ '/affichageForm/', taxi.id ]">Afficher</button>
+                        <button class="btn btn-dark text-warning border-warning" style="margin-right: 5px;"
+                            [routerLink]="[ '/updateForm/', taxi.id ]">Modifier</button>
+                        <button class="btn btn-dark text-warning border-warning"
+                            (click)="delete(taxi.id, i)">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
