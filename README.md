@@ -1,3 +1,7 @@
+Pour que le CRUD soit fontionnel il faut lancer le json-server VehiculeData.jjson dans src/app/application/reactive
+
+
+
 # Tpfinal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
